@@ -1,0 +1,51 @@
+.Burger {
+    width: 25%;
+    margin: auto;
+    /* height: 500px; */
+    /* overflow: scroll; */
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    /* padding-top: 90px; */
+    /* padding-bottom: 30px; */
+}
+
+@media (min-width: 500px) and (min-height: 400px) {
+    /* .Burger {
+        width: 350px;
+        height: 300px;;
+    } */
+}
+
+@media (max-width: 1400px) {
+    .Burger {
+        width: 25%;
+    }
+}
+
+@media (max-width: 991px) {
+    .Burger {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Burger {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Burger {
+        width: 80%;
+        /* padding-top: 20px; */
+        /* height: 400px; */
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    /* .Burger {
+        width: 700px;
+        height: 600px;;
+    } */
+}

@@ -1,0 +1,120 @@
+.BuildControl {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 5px 0; */
+    /* background-color: #f5f6f8; */
+    width: 100%;
+    border-top: 1px solid #363b41;
+    /* padding: 15px; */
+    padding-bottom: 0;
+}
+
+.BuildControl:last-child(-1)  {
+    background-color: red;
+}
+
+
+.BuildControl button {
+    display: block;
+    font: inherit;
+    /* padding: 5px; */
+    margin: 0 5px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #353a40;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.BuildControl button:disabled {
+    background-color: #353a40;
+    border: 1px solid #353a40;
+    color: #ccc;
+    cursor: default;
+}
+
+.BuildControl button:hover:disabled {
+    background-color: #353a40;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Label {
+    padding: 10px;
+    /* font-weight: bold; */
+}
+
+.BuildControl .Counter {
+    display: flex;
+    align-items: center;
+    background-color: #111a21;
+    padding: 15px;
+    /* width: 100%; */
+    justify-content: center;
+    border-left: 1px solid #ccc;;
+}
+
+/* .BuildControl .Counter:nth-child(4) {
+    border-left: none;;
+} */
+
+.BuildControl .Counter p {
+    padding: 0 15px;
+    color: #e4e8eb;
+}
+
+.BuildControl .Less {  
+    background-color: #111a21;
+    color: white;
+    font-weight: bold;;
+}
+
+.BuildControl .More {
+    background-color: #111a21;
+    color: white;
+}
+
+.BuildControl .Less:hover, .BuildControl .Less:active {  
+    background-color: #f5f6f8;
+    color: #111a21;
+}
+
+.BuildControl .More:hover,.BuildControl .More:active {
+    background-color: #f5f6f8;
+    color: #111a21;
+}
+
+@media (max-width: 991px) {
+    .BuildControl .Counter {
+        flex-direction: row;
+    }
+}
+
+/* @media (max-width: 705px) {
+    .BuildControl .Counter {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 705px) {
+    .BuildControl .Counter {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 405px) {
+    .BuildControl .Counter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .BuildControl .Counter p {
+        padding: 0;
+    }
+    .BuildControl {
+        padding-left: 0;
+        padding-right: 0;
+}
+} */

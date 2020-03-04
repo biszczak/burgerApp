@@ -1,0 +1,19 @@
+.BurgerBuilder {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.MainSpinner {
+    position: absolute;
+    top: 35%;
+    left: 48%;
+}
+
+@media (max-width: 991px) {
+    .BurgerBuilder {
+        flex-direction: column;
+        height: 100vh;
+        /* margin-top: 120px; */
+    }
+}

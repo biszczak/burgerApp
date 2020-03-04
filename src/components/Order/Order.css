@@ -1,0 +1,47 @@
+.Order {
+    width: 80%;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 15px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.IngredientsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.IngsContainer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Ing {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    width: fit-content;
+}
+
+.IngredientsList div img{
+    height: 20px;
+}
+
+@media (max-width: 715px) {
+    .IngsContainer{
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .Ing {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    .Ing:first-child {
+        margin-top: 0;
+    }
+}
